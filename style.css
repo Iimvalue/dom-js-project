@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    /* stack a black, 70%-opaque gradient on top of your image */
+    background-image: 
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url("https://wallpapers.com/images/hd/brun-bakgrund-2560-x-1600-u240zdqxs8ns0qnx.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    /* make sure your text is on top of the overlay */
+    color: #fff;
+  }
+
+/* colors will used
+#F4EEE4 Wood Beige, background color
+
+#5A5A5A Iron Gray, card, nav
+
+#1A1A1A Coal Black text
+
+#D4A417 Mustard Yellow
+
+
+#B35C00 Rusty Orange for interactive
+*/
