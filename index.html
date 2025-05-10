@@ -13,196 +13,193 @@
     <title>Industrial Revolution</title>
   </head>
   <body>
-    <main class="d-flex">
-      <div class="side-bar d-flex">
-        <div
-          class="d-flex flex-column p-3 text-white bg-dark vh-100"
-          style="width: 280px"
+    <!-- Mobile Burger Icons Start -->
+    <nav class="navbar bg-dark navbar-dark d-md-none">
+      <div class="container-fluid">
+        <button
+          class="btn btn-outline-light"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileSidebar"
+          aria-controls="mobileSidebar"
         >
+          ☰ الثورة الصناعية
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Burger Icons End -->
+
+    <div class="d-flex flex-column flex-md-row">
+      <aside
+        class="offcanvas-md offcanvas-start d-flex flex-column p-3 text-white bg-dark vh-100"
+        tabindex="-1"
+        id="mobileSidebar"
+        aria-labelledby="mobileSidebarLabel"
+        style="width: 280px"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 text-white text-decoration-none"
+        >
+          <span class="fs-4">الثورة الصناعية</span>
+        </a>
+        <hr />
+
+        <!-- Nav items Start -->
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a id="1764–1779" class="nav-link active" aria-current="page">
+              <i class="bi bi-house-door me-2"></i>
+              1764–1779
+            </a>
+          </li>
+          <li>
+            <a id="1785–1793" class="nav-link text-white">
+              <i class="bi bi-speedometer2 me-2"></i>
+              1785–1793
+            </a>
+          </li>
+          <li>
+            <a id="1802–1804" class="nav-link text-white">
+              <i class="bi bi-table me-2"></i>
+              1802–1804
+            </a>
+          </li>
+          <li>
+            <a id="1811–1813" class="nav-link text-white">
+              <i class="bi bi-grid me-2"></i>
+              1811–1813
+            </a>
+          </li>
+          <li>
+            <a id="1825–1837" class="nav-link text-white">
+              <i class="bi bi-people-circle me-2"></i>
+              1825–1837
+            </a>
+          </li>
+        </ul>
+        <!-- Nav items End -->
+
+        <hr />
+
+        <!-- Profile dropdown Start -->
+        <div class="dropdown">
           <a
-            href="/"
-            class="d-flex justify-content-start w-100 mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            href="#"
+            class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+            id="profile"
+            data-bs-toggle="dropdown"
           >
-            <span class="fs-4">الثورة الصناعية</span>
+            <img
+              src="https://github.com/mdo.png"
+              alt=""
+              width="32"
+              height="32"
+              class="rounded-circle me-2"
+            />
+            <strong id="user-name"></strong>
           </a>
-          <hr />
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#home" />
-                </svg>
-                1764–1779
-              </a>
-            </li>
+          <ul
+            class="dropdown-menu dropdown-menu-dark text-small shadow"
+            aria-labelledby="profileDropdown"
+          >
+            <li><a class="dropdown-item" href="#">حسابي</a></li>
+            <li><hr class="dropdown-divider" /></li>
             <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#speedometer2" />
-                </svg>
-                1785–1793
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#table" />
-                </svg>
-                1802–1804
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#grid" />
-                </svg>
-                1811–1813
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#people-circle" />
-                </svg>
-                1825–1837
-              </a>
+              <a class="dropdown-item text-danger" href="#">تسجيل خروج</a>
             </li>
           </ul>
-          <hr />
-          <div class="dropdown">
-            <a
-              href="#"
-              class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-              id="dropdownUser1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="https://github.com/mdo.png"
-                alt=""
-                width="32"
-                height="32"
-                class="rounded-circle me-2"
-              />
-              <strong>mdo</strong>
-            </a>
-            <ul
-              class="dropdown-menu dropdown-menu-dark text-small shadow"
-              aria-labelledby="dropdownUser1"
-            >
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
         </div>
-      </div>
+        <!-- Profile dropdown Start -->
+      </aside>
 
-      <div
-        class="content d-flex flex-column justify-content-center align-items-center p-3 w-75"
-      >
+      <!-- Main content -->
+      <main class="flex-fill p-3">
         <div class="container marketing h-100">
-          <!-- Three columns of text below the carousel -->
-          <div class="row h-100">
+          <div
+            id="card-content"
+            class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 h-100 small-screen"
+          >
             <div
-              class="col-lg-4 h-50 d-flex flex-column justify-content-center align-items-center"
+              class="col-6 d-flex justify-content-center align-items-center h-50"
             >
               <a
                 href="#"
-                class="col-lg-4 d-flex flex-column align-items-center gap-2 w-100 text-decoration-none"
+                class="text-decoration-none text-center"
+                style="max-width: 200px"
               >
                 <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Spinning_jenny.jpg/600px-Spinning_jenny.jpg"
+                  class="rounded-circle mb-2"
                   width="100"
                   height="100"
-                  class="bd-placeholder-img rounded-circle"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Spinning_jenny.jpg/600px-Spinning_jenny.jpg"
-                  alt=""
+                  alt="Spinning Jenny"
                 />
-                <div
-                  class="details p-1 rounded-1 badge"
-                  style="background-color: white"
-                >
-                  <p class="text-dark fw-bold" style="font-size: 14px">
+                <div class="badge bg-white p-2 w-100">
+                  <p class="mb-1 fw-bold small text-dark">
                     اختراع آلة Spinning Jenny
                   </p>
-                  <span class="opacity-50 text-secondary fw-italic">1764</span>
+                  <span class="small fst-italic text-secondary opacity-75"
+                    >1764</span
+                  >
                 </div>
               </a>
-
-              <!-- <p>
-                <a class="btn btn-secondary" href="#">View details &raquo;</a>
-              </p> -->
             </div>
-            <!-- /.col-lg-4 -->
             <div
-              class="col-lg-4 h-75 d-flex flex-column justify-content-center align-items-center"
+              class="col-12 d-flex justify-content-center align-items-center h-75"
             >
               <a
                 href="#"
-                class="col-lg-4 d-flex flex-column align-items-center gap-2 w-100 text-decoration-none"
+                class="text-decoration-none text-center"
+                style="max-width: 200px"
               >
                 <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/16/Newcomen_atmospheric_engine_animation.gif"
+                  class="rounded-circle mb-2"
                   width="100"
                   height="100"
-                  class="bd-placeholder-img rounded-circle"
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/16/Newcomen_atmospheric_engine_animation.gif"
-                  alt="محرك نيوكومن البخاري"
+                  alt="محرك نيوكومن"
                 />
-                <div
-                  class="details p-1 rounded-1 badge"
-                  style="background-color: white"
-                >
-                  <p class="text-dark fw-bold" style="font-size: 14px">
+                <div class="badge bg-white p-2 w-100">
+                  <p class="mb-1 fw-bold small text-dark">
                     محرك نيوكومن البخاري
                   </p>
-                  <span class="opacity-50 text-secondary fw-italic">1769</span>
+                  <span class="small fst-italic text-secondary opacity-75"
+                    >1769</span
+                  >
                 </div>
               </a>
             </div>
-            <!-- /.col-lg-4 -->
             <div
-              class="col-lg-4 h-100 d-flex flex-column justify-content-center align-items-center"
+              class="col-6 d-flex justify-content-center align-items-center h-100"
             >
               <a
                 href="#"
-                class="col-lg-4 d-flex flex-column align-items-center gap-2 w-100 text-decoration-none"
+                class="text-decoration-none text-center"
+                style="max-width: 200px"
               >
                 <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Mule-jenny.jpg"
+                  class="rounded-circle mb-2"
                   width="100"
                   height="100"
-                  class="bd-placeholder-img rounded-circle"
-                  src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Mule-jenny.jpg"
-                  alt="آلة Mule الهجينة"
+                  alt="آلة Mule"
                 />
-                <div
-                  class="details p-1 rounded-1 badge"
-                  style="background-color: white"
-                >
-                  <p class="text-dark fw-bold" style="font-size: 14px">
-                    آلة Mule الهجينة
-                  </p>
-                  <span class="opacity-50 text-secondary fw-italic">1779</span>
+                <div class="badge bg-white p-2 w-100">
+                  <p class="mb-1 fw-bold small text-dark">آلة Mule الهجينة</p>
+                  <span class="small fst-italic text-secondary opacity-75"
+                    >1779</span
+                  >
                 </div>
               </a>
-
-              <!-- <p>
-                  <a class="btn btn-secondary" href="#">View details &raquo;</a>
-                </p> -->
             </div>
-            <!-- /.col-lg-4 -->
           </div>
-          <!-- /.row -->
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
 
+    <!-- Bootstrap JS (make sure you have Popper too) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.x/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
