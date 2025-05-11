@@ -1,0 +1,11 @@
+body{
+    background-color: #F4EEE4 ;
+}
+
+.comment-box {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+  }
