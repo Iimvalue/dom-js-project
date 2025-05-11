@@ -13,16 +13,29 @@
     <title>تسجيل الدخول</title>
   </head>
   <body>
+    <button
+      type="button"
+      class="btn-close position-absolute top-0 end-0 m-3"
+      aria-label="Close"
+      onclick="window.location.href = '../index.html';"
+    ></button>
     <section class="vh-100">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6 text-black">
-            <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-              <form id="registerForm" style="width: 23rem" action="../index.html" method="get">
+            <div
+              class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5"
+            >
+              <form
+                id="registerForm"
+                style="width: 23rem"
+                action="../index.html"
+                method="get"
+              >
                 <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">
                   تسجيل حساب
                 </h3>
-    
+
                 <div data-mdb-input-init class="form-outline mb-4">
                   <input
                     id="full-name"
@@ -35,7 +48,7 @@
                     oninvalid="this.setCustomValidity('الاسم الكامل يجب أن يكون أكثر من حرفين')"
                   />
                 </div>
-    
+
                 <div data-mdb-input-init class="form-outline mb-4">
                   <input
                     id="username"
@@ -48,7 +61,7 @@
                     oninvalid="this.setCustomValidity('اسم المستخدم يجب أن يكون أكثر من 3 أحرف')"
                   />
                 </div>
-    
+
                 <div data-mdb-input-init class="form-outline mb-4">
                   <input
                     id="email"
@@ -60,7 +73,7 @@
                     oninvalid="this.setCustomValidity('يرجى إدخال بريد إلكتروني صالح')"
                   />
                 </div>
-    
+
                 <div data-mdb-input-init class="form-outline mb-4">
                   <input
                     id="password"
@@ -71,7 +84,7 @@
                     required
                   />
                 </div>
-    
+
                 <div data-mdb-input-init class="form-outline mb-4">
                   <input
                     id="confirm-password"
@@ -82,17 +95,17 @@
                     required
                   />
                 </div>
-    
+
                 <div class="pt-1 mb-4">
                   <button
                     type="submit"
                     class="btn btn-lg btn-block border-0"
-                    style="background-color: #b35c00; color: #F4EEE4;"
+                    style="background-color: #b35c00; color: #f4eee4"
                   >
                     إنشاء حساب
                   </button>
                 </div>
-    
+
                 <p>
                   لديك حساب بالفعل؟
                   <a href="/login" style="color: #b35c00">سجل دخول من هنا!</a>
@@ -100,7 +113,7 @@
               </form>
             </div>
           </div>
-    
+
           <div class="col-sm-6 px-0 d-none d-sm-block">
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F17%2F167717-050-C106E746%2Fboys-mill-Macon-Georgia-1909.jpg&f=1&nofb=1&ipt=f1bf2a03edc8ce21d55ac62a193cedd2735a887af9405946a12f5b1fb05c7a6b"
@@ -112,7 +125,6 @@
         </div>
       </div>
     </section>
-    
 
     <script src="./register.js"></script>
   </body>

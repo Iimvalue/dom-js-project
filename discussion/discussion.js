@@ -35,9 +35,12 @@ function displayComment(comment) {
 }
 
 let cardTitle = document.getElementById("card-title");
-
+let cardText = document.getElementById("card-text")
+let cardImg = document.getElementById("card-img")
 let cardDetails = JSON.parse(localStorage.getItem("card-details"));
 
-console.log(cardDetails.title);
 
 cardTitle.innerText = cardDetails.title;
+cardText.innerText = cardDetails.description
+cardImg.src = cardDetails.img
+

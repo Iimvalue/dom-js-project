@@ -1,25 +1,25 @@
 let user = document.getElementById("user-name");
 let profileSection = document.getElementById("profile");
 
-if (localStorage.getItem("account-name") != null) {
-  user.innerText = localStorage.getItem("account-name");
-  img =
-    localStorage.getItem("profile-img") != null
-      ? localStorage.getItem("profile-img")
-      : "";
-  profileSection.innerText = `
-                <img
-                src=${img}
-                alt="image"
-                width="32"
-                height="32"
-                class="rounded-circle me-2"
-              />
-              <strong id="user-name"></strong>
-            </a>`;
-} else {
-  profileSection.innerText = "تسجيل الدخول";
-}
+// if (localStorage.getItem("account-name") != null) {
+//   user.innerText = localStorage.getItem("account-name");
+//   img =
+//     localStorage.getItem("profile-img") != null
+//       ? localStorage.getItem("profile-img")
+//       : "";
+//   profileSection.innerHTML = `
+//                 <img
+//                 src=https://bootdey.com/img/Content/avatar/avatar7.png
+//                 alt="image"
+//                 width="32"
+//                 height="32"
+//                 class="rounded-circle me-2"
+//               />
+//               <strong id="user-name"></strong>
+//             </a>`;
+// } else {
+//   profileSection.innerText = "تسجيل الدخول";
+// }
 
 // Card Content
 let industrial_revolution_data = {
@@ -286,6 +286,27 @@ let historySpan = document.getElementById("1764");
 containerCardContent.addEventListener("click", () => {
   let array = industrial_revolution_data["1764–1779"].filter((data) => {
     return data.span == "1764";
+  });
+
+  localStorage.setItem("card-details", JSON.stringify(array[0]));
+});
+
+let historySpan1 = document.getElementById("1769");
+
+containerCardContent.addEventListener("click", () => {
+  let array = industrial_revolution_data["1764–1779"].filter((data) => {
+    return data.span == "1769";
+  });
+
+  localStorage.setItem("card-details", JSON.stringify(array[0]));
+});
+
+
+let historySpan2 = document.getElementById("1779");
+
+containerCardContent.addEventListener("click", () => {
+  let array = industrial_revolution_data["1764–1779"].filter((data) => {
+    return data.span == "1797";
   });
 
   localStorage.setItem("card-details", JSON.stringify(array[0]));
